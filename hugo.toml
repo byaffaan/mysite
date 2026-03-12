@@ -1,0 +1,27 @@
+baseURL = "https://simitporcedula.pages.dev"
+languageCode = "es-co"
+title = "SIMIT Por Placa"
+theme = "PaperMod"
+
+[params]
+  author = "Juana Medina"
+  description = "Consulta SIMIT por placa en Colombia. Revisa comparendos, multas y sanciones pendientes. Paga en línea fácil y evita bloqueos en trámites de tránsito."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "SIMIT Por Placa"
+  Content = "Articles about your topic"
+
+[menu]
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
