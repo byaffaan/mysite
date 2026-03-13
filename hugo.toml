@@ -2,11 +2,17 @@ baseURL = "https://mysite-e7n.pages.dev/"
 languageCode = "es-co"
 title = "SIMIT Por Placa"
 theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
 [params]
+  env = "production"
   author = "Juana Medina"
   description = "Consulta SIMIT por placa en Colombia. Revisa comparendos, multas y sanciones pendientes. Paga en línea fácil y evita bloqueos en trámites de tránsito."
-  mainSections = ["posts"]
+  defaultTheme = "auto"
+  disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -16,15 +22,11 @@ theme = "PaperMod"
   ShowToc = true
   TocOpen = false
   ShowFullTextinRSS = true
-  defaultTheme = "auto"
-  disableThemeToggle = false
+  ShowRssButtonInSectionTermList = true
 
-[params.profileMode]
-  enabled = true
-  title = "Consulta SIMIT por Placa 🚗"
-  subtitle = "Revisa tus comparendos, multas y sanciones pendientes en el SIMIT. Consulta rápida y fácil por número de placa."
-  imageUrl = "https://simitporcedula.co/wp-content/uploads/2026/03/%C2%BFQue-pasa-si-dos-vehiculos-tienen-placas-muy-similares.webp"
-  imageTitle = "hello baby"
+[params.homeInfoParams]
+  Title = "Consulta SIMIT por Placa 🚗"
+  Content = "Revisa tus comparendos, multas y sanciones pendientes en el SIMIT. Consulta rápida y fácil por número de placa."
 
 [menu]
   [[menu.main]]
@@ -50,3 +52,6 @@ theme = "PaperMod"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
