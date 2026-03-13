@@ -22,7 +22,7 @@ buildExpired = false
   ShowToc = true
   TocOpen = false
   ShowFullTextinRSS = true
-  ShowRssButtonInSectionTermList = true
+  mainSections = ["posts"]
 
 [params.homeInfoParams]
   Title = "Consulta SIMIT por Placa 🚗"
