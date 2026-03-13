@@ -7,21 +7,44 @@ theme = "PaperMod"
   author = "Juana Medina"
   description = "Consulta SIMIT por placa en Colombia. Revisa comparendos, multas y sanciones pendientes. Paga en línea fácil y evita bloqueos en trámites de tránsito."
   ShowReadingTime = true
-  ShowShareButtons = false
+  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  TocOpen = false
+  ShowFullTextinRSS = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
 
 [params.homeInfoParams]
-  Title = "SIMIT Por Placa"
-  Content = "Articles about your topic"
+  Title = "Consulta SIMIT por Placa 🚗"
+  Content = "Revisa tus comparendos, multas y sanciones pendientes en el SIMIT. Consulta rápida y fácil por número de placa."
+
+[params.socialIcons]
 
 [menu]
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
+    identifier = "inicio"
+    name = "Inicio"
+    url = "/"
+    weight = 5
+  [[menu.main]]
+    identifier = "Blogs"
+    name = "Blogs"
+    url = "/posts/"
     weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Etiquetas"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Buscar"
+    url = "/search/"
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

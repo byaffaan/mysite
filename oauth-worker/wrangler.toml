@@ -1,0 +1,6 @@
+name = "cms-oauth"
+main = "index.js"
+compatibility_date = "2026-03-12"
+
+[vars]
+GITHUB_CLIENT_ID = "Ov23liaK1ZbqvaujcvX7"
