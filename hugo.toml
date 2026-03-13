@@ -19,9 +19,12 @@ theme = "PaperMod"
   defaultTheme = "auto"
   disableThemeToggle = false
 
-[params.homeInfoParams]
-  Title = "Consulta SIMIT por Placa 🚗"
-  Content = "Revisa tus comparendos, multas y sanciones pendientes en el SIMIT. Consulta rápida y fácil por número de placa."
+[params.profileMode]
+  enabled = true
+  title = "Consulta SIMIT por Placa 🚗"
+  subtitle = "Revisa tus comparendos, multas y sanciones pendientes en el SIMIT. Consulta rápida y fácil por número de placa."
+  imageUrl = "https://simitporcedula.co/wp-content/uploads/2026/03/%C2%BFQue-pasa-si-dos-vehiculos-tienen-placas-muy-similares.webp"
+  imageTitle = "hello baby"
 
 [menu]
   [[menu.main]]
